@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEFF281B1D44AAF100936E4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF281A1D44AAF100936E4A /* main.m */; };
+		AEFF281E1D44AAF100936E4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF281D1D44AAF100936E4A /* AppDelegate.m */; };
+		AEFF28211D44AAF100936E4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28201D44AAF100936E4A /* ViewController.m */; };
+		AEFF28241D44AAF100936E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFF28221D44AAF100936E4A /* Main.storyboard */; };
+		AEFF28271D44AAF100936E4A /* RJScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28251D44AAF100936E4A /* RJScanner.xcdatamodeld */; };
+		AEFF28291D44AAF100936E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFF28281D44AAF100936E4A /* Assets.xcassets */; };
+		AEFF282C1D44AAF100936E4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFF282A1D44AAF100936E4A /* LaunchScreen.storyboard */; };
+		AEFF28371D44AAF100936E4A /* RJScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28361D44AAF100936E4A /* RJScannerTests.m */; };
+		AEFF28421D44AAF100936E4A /* RJScannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28411D44AAF100936E4A /* RJScannerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEFF28331D44AAF100936E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEFF280E1D44AAF100936E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEFF28151D44AAF100936E4A;
+			remoteInfo = RJScanner;
+		};
+		AEFF283E1D44AAF100936E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEFF280E1D44AAF100936E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEFF28151D44AAF100936E4A;
+			remoteInfo = RJScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEFF28161D44AAF100936E4A /* RJScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF281A1D44AAF100936E4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEFF281C1D44AAF100936E4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEFF281D1D44AAF100936E4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEFF281F1D44AAF100936E4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AEFF28201D44AAF100936E4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AEFF28231D44AAF100936E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEFF28261D44AAF100936E4A /* RJScanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RJScanner.xcdatamodel; sourceTree = "<group>"; };
+		AEFF28281D44AAF100936E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEFF282B1D44AAF100936E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEFF282D1D44AAF100936E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFF28321D44AAF100936E4A /* RJScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF28361D44AAF100936E4A /* RJScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJScannerTests.m; sourceTree = "<group>"; };
+		AEFF28381D44AAF100936E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEFF283D1D44AAF100936E4A /* RJScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF28411D44AAF100936E4A /* RJScannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJScannerUITests.m; sourceTree = "<group>"; };
+		AEFF28431D44AAF100936E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEFF28131D44AAF100936E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFF282F1D44AAF100936E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFF283A1D44AAF100936E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEFF280D1D44AAF100936E4A = {
+			isa = PBXGroup;
+			children = (
+				AEFF28181D44AAF100936E4A /* RJScanner */,
+				AEFF28351D44AAF100936E4A /* RJScannerTests */,
+				AEFF28401D44AAF100936E4A /* RJScannerUITests */,
+				AEFF28171D44AAF100936E4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEFF28171D44AAF100936E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF28161D44AAF100936E4A /* RJScanner.app */,
+				AEFF28321D44AAF100936E4A /* RJScannerTests.xctest */,
+				AEFF283D1D44AAF100936E4A /* RJScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEFF28181D44AAF100936E4A /* RJScanner */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF281C1D44AAF100936E4A /* AppDelegate.h */,
+				AEFF281D1D44AAF100936E4A /* AppDelegate.m */,
+				AEFF281F1D44AAF100936E4A /* ViewController.h */,
+				AEFF28201D44AAF100936E4A /* ViewController.m */,
+				AEFF28221D44AAF100936E4A /* Main.storyboard */,
+				AEFF28281D44AAF100936E4A /* Assets.xcassets */,
+				AEFF282A1D44AAF100936E4A /* LaunchScreen.storyboard */,
+				AEFF282D1D44AAF100936E4A /* Info.plist */,
+				AEFF28251D44AAF100936E4A /* RJScanner.xcdatamodeld */,
+				AEFF28191D44AAF100936E4A /* Supporting Files */,
+			);
+			path = RJScanner;
+			sourceTree = "<group>";
+		};
+		AEFF28191D44AAF100936E4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF281A1D44AAF100936E4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEFF28351D44AAF100936E4A /* RJScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF28361D44AAF100936E4A /* RJScannerTests.m */,
+				AEFF28381D44AAF100936E4A /* Info.plist */,
+			);
+			path = RJScannerTests;
+			sourceTree = "<group>";
+		};
+		AEFF28401D44AAF100936E4A /* RJScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF28411D44AAF100936E4A /* RJScannerUITests.m */,
+				AEFF28431D44AAF100936E4A /* Info.plist */,
+			);
+			path = RJScannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEFF28151D44AAF100936E4A /* RJScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFF28461D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScanner" */;
+			buildPhases = (
+				AEFF28121D44AAF100936E4A /* Sources */,
+				AEFF28131D44AAF100936E4A /* Frameworks */,
+				AEFF28141D44AAF100936E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RJScanner;
+			productName = RJScanner;
+			productReference = AEFF28161D44AAF100936E4A /* RJScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEFF28311D44AAF100936E4A /* RJScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFF28491D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScannerTests" */;
+			buildPhases = (
+				AEFF282E1D44AAF100936E4A /* Sources */,
+				AEFF282F1D44AAF100936E4A /* Frameworks */,
+				AEFF28301D44AAF100936E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEFF28341D44AAF100936E4A /* PBXTargetDependency */,
+			);
+			name = RJScannerTests;
+			productName = RJScannerTests;
+			productReference = AEFF28321D44AAF100936E4A /* RJScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEFF283C1D44AAF100936E4A /* RJScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFF284C1D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScannerUITests" */;
+			buildPhases = (
+				AEFF28391D44AAF100936E4A /* Sources */,
+				AEFF283A1D44AAF100936E4A /* Frameworks */,
+				AEFF283B1D44AAF100936E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEFF283F1D44AAF100936E4A /* PBXTargetDependency */,
+			);
+			name = RJScannerUITests;
+			productName = RJScannerUITests;
+			productReference = AEFF283D1D44AAF100936E4A /* RJScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEFF280E1D44AAF100936E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CapricornRJ;
+				TargetAttributes = {
+					AEFF28151D44AAF100936E4A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					AEFF28311D44AAF100936E4A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AEFF28151D44AAF100936E4A;
+					};
+					AEFF283C1D44AAF100936E4A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = AEFF28151D44AAF100936E4A;
+					};
+				};
+			};
+			buildConfigurationList = AEFF28111D44AAF100936E4A /* Build configuration list for PBXProject "RJScanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEFF280D1D44AAF100936E4A;
+			productRefGroup = AEFF28171D44AAF100936E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEFF28151D44AAF100936E4A /* RJScanner */,
+				AEFF28311D44AAF100936E4A /* RJScannerTests */,
+				AEFF283C1D44AAF100936E4A /* RJScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEFF28141D44AAF100936E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFF282C1D44AAF100936E4A /* LaunchScreen.storyboard in Resources */,
+				AEFF28291D44AAF100936E4A /* Assets.xcassets in Resources */,
+				AEFF28241D44AAF100936E4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFF28301D44AAF100936E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFF283B1D44AAF100936E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEFF28121D44AAF100936E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFF28271D44AAF100936E4A /* RJScanner.xcdatamodeld in Sources */,
+				AEFF28211D44AAF100936E4A /* ViewController.m in Sources */,
+				AEFF281E1D44AAF100936E4A /* AppDelegate.m in Sources */,
+				AEFF281B1D44AAF100936E4A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFF282E1D44AAF100936E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFF28371D44AAF100936E4A /* RJScannerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEFF28391D44AAF100936E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFF28421D44AAF100936E4A /* RJScannerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEFF28341D44AAF100936E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEFF28151D44AAF100936E4A /* RJScanner */;
+			targetProxy = AEFF28331D44AAF100936E4A /* PBXContainerItemProxy */;
+		};
+		AEFF283F1D44AAF100936E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEFF28151D44AAF100936E4A /* RJScanner */;
+			targetProxy = AEFF283E1D44AAF100936E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEFF28221D44AAF100936E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEFF28231D44AAF100936E4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEFF282A1D44AAF100936E4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEFF282B1D44AAF100936E4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEFF28441D44AAF100936E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEFF28451D44AAF100936E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEFF28471D44AAF100936E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RJScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEFF28481D44AAF100936E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RJScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AEFF284A1D44AAF100936E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RJScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RJScanner.app/RJScanner";
+			};
+			name = Debug;
+		};
+		AEFF284B1D44AAF100936E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RJScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RJScanner.app/RJScanner";
+			};
+			name = Release;
+		};
+		AEFF284D1D44AAF100936E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RJScannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RJScanner;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AEFF284E1D44AAF100936E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RJScannerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RJScanner;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEFF28111D44AAF100936E4A /* Build configuration list for PBXProject "RJScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFF28441D44AAF100936E4A /* Debug */,
+				AEFF28451D44AAF100936E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEFF28461D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFF28471D44AAF100936E4A /* Debug */,
+				AEFF28481D44AAF100936E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEFF28491D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFF284A1D44AAF100936E4A /* Debug */,
+				AEFF284B1D44AAF100936E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEFF284C1D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFF284D1D44AAF100936E4A /* Debug */,
+				AEFF284E1D44AAF100936E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEFF28251D44AAF100936E4A /* RJScanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEFF28261D44AAF100936E4A /* RJScanner.xcdatamodel */,
+			);
+			currentVersion = AEFF28261D44AAF100936E4A /* RJScanner.xcdatamodel */;
+			path = RJScanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEFF280E1D44AAF100936E4A /* Project object */;
+}
