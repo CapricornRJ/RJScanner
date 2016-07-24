@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RJScanViewController.h
 //  RJScanner
 //
 //  Created by renjie on 16/7/24.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RJScanViewController : UIViewController
 
 
 @end

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AED314FB1D44B37700F12FB0 /* RJScanNative.m in Sources */ = {isa = PBXBuildFile; fileRef = AED314F61D44B37700F12FB0 /* RJScanNative.m */; };
+		AED314FC1D44B37700F12FB0 /* RJScanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = AED314F81D44B37700F12FB0 /* RJScanResult.m */; };
+		AED314FD1D44B37700F12FB0 /* RJScanWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AED314FA1D44B37700F12FB0 /* RJScanWrapper.m */; };
 		AEFF281B1D44AAF100936E4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF281A1D44AAF100936E4A /* main.m */; };
 		AEFF281E1D44AAF100936E4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF281D1D44AAF100936E4A /* AppDelegate.m */; };
-		AEFF28211D44AAF100936E4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28201D44AAF100936E4A /* ViewController.m */; };
+		AEFF28211D44AAF100936E4A /* RJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28201D44AAF100936E4A /* RJScanViewController.m */; };
 		AEFF28241D44AAF100936E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFF28221D44AAF100936E4A /* Main.storyboard */; };
 		AEFF28271D44AAF100936E4A /* RJScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEFF28251D44AAF100936E4A /* RJScanner.xcdatamodeld */; };
 		AEFF28291D44AAF100936E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFF28281D44AAF100936E4A /* Assets.xcassets */; };
@@ -36,12 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AED314F51D44B37700F12FB0 /* RJScanNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJScanNative.h; sourceTree = "<group>"; };
+		AED314F61D44B37700F12FB0 /* RJScanNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJScanNative.m; sourceTree = "<group>"; };
+		AED314F71D44B37700F12FB0 /* RJScanResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJScanResult.h; sourceTree = "<group>"; };
+		AED314F81D44B37700F12FB0 /* RJScanResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJScanResult.m; sourceTree = "<group>"; };
+		AED314F91D44B37700F12FB0 /* RJScanWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJScanWrapper.h; sourceTree = "<group>"; };
+		AED314FA1D44B37700F12FB0 /* RJScanWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJScanWrapper.m; sourceTree = "<group>"; };
 		AEFF28161D44AAF100936E4A /* RJScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF281A1D44AAF100936E4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEFF281C1D44AAF100936E4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEFF281D1D44AAF100936E4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEFF281F1D44AAF100936E4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEFF28201D44AAF100936E4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AEFF281F1D44AAF100936E4A /* RJScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJScanViewController.h; sourceTree = "<group>"; };
+		AEFF28201D44AAF100936E4A /* RJScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJScanViewController.m; sourceTree = "<group>"; };
 		AEFF28231D44AAF100936E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEFF28261D44AAF100936E4A /* RJScanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RJScanner.xcdatamodel; sourceTree = "<group>"; };
 		AEFF28281D44AAF100936E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,8 +114,14 @@
 			children = (
 				AEFF281C1D44AAF100936E4A /* AppDelegate.h */,
 				AEFF281D1D44AAF100936E4A /* AppDelegate.m */,
-				AEFF281F1D44AAF100936E4A /* ViewController.h */,
-				AEFF28201D44AAF100936E4A /* ViewController.m */,
+				AEFF281F1D44AAF100936E4A /* RJScanViewController.h */,
+				AEFF28201D44AAF100936E4A /* RJScanViewController.m */,
+				AED314F51D44B37700F12FB0 /* RJScanNative.h */,
+				AED314F61D44B37700F12FB0 /* RJScanNative.m */,
+				AED314F71D44B37700F12FB0 /* RJScanResult.h */,
+				AED314F81D44B37700F12FB0 /* RJScanResult.m */,
+				AED314F91D44B37700F12FB0 /* RJScanWrapper.h */,
+				AED314FA1D44B37700F12FB0 /* RJScanWrapper.m */,
 				AEFF28221D44AAF100936E4A /* Main.storyboard */,
 				AEFF28281D44AAF100936E4A /* Assets.xcassets */,
 				AEFF282A1D44AAF100936E4A /* LaunchScreen.storyboard */,
@@ -210,6 +225,7 @@
 				TargetAttributes = {
 					AEFF28151D44AAF100936E4A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ZZE6N6KCG5;
 					};
 					AEFF28311D44AAF100936E4A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -273,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED314FB1D44B37700F12FB0 /* RJScanNative.m in Sources */,
 				AEFF28271D44AAF100936E4A /* RJScanner.xcdatamodeld in Sources */,
-				AEFF28211D44AAF100936E4A /* ViewController.m in Sources */,
+				AEFF28211D44AAF100936E4A /* RJScanViewController.m in Sources */,
+				AED314FC1D44B37700F12FB0 /* RJScanResult.m in Sources */,
 				AEFF281E1D44AAF100936E4A /* AppDelegate.m in Sources */,
 				AEFF281B1D44AAF100936E4A /* main.m in Sources */,
+				AED314FD1D44B37700F12FB0 /* RJScanWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chutu Hu (7SLA7LZ423)";
 				INFOPLIST_FILE = RJScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niming.find;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -428,9 +449,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chutu Hu (7SLA7LZ423)";
 				INFOPLIST_FILE = RJScanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = scan.RJScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niming.find;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -502,6 +525,7 @@
 				AEFF28481D44AAF100936E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEFF28491D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +534,7 @@
 				AEFF284B1D44AAF100936E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEFF284C1D44AAF100936E4A /* Build configuration list for PBXNativeTarget "RJScannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +543,7 @@
 				AEFF284E1D44AAF100936E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
