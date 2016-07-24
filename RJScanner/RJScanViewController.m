@@ -14,7 +14,7 @@
 #define  RJScreen_Height [UIScreen mainScreen].bounds.size.height
 #define  RJScreen_Width [UIScreen mainScreen].bounds.size.width
 
-@interface RJScanViewController ()
+@interface RJScanViewController () <UIAlertViewDelegate>
 
 /**
  *  扫码功能封装对象
@@ -24,6 +24,7 @@
 @property (nonatomic, strong) UIImageView *topGlassImageView;
 @property (nonatomic, strong) UIImageView *middleGlassImageView;
 @property (nonatomic, strong) UIImageView *bottomGlassImageView;
+@property (nonatomic, strong) UILabel     *alertLabel;
 
 @end
 
@@ -59,12 +60,14 @@
     [self.view addSubview:self.topGlassImageView];
     [self.view addSubview:self.middleGlassImageView];
     [self.view addSubview:self.bottomGlassImageView];
+    [self.view addSubview:self.alertLabel];
 }
 
 - (void)addUIConstraints {
     self.topGlassImageView.frame = CGRectMake(0, 0, RJScreen_Width, (RJScreen_Height - RJScreen_Width + 40) / 2.0);
     self.middleGlassImageView.frame = CGRectMake(0, CGRectGetMaxY(self.topGlassImageView.frame), RJScreen_Width, RJScreen_Width - 40);
     self.bottomGlassImageView.frame = CGRectMake(0, CGRectGetMaxY(self.middleGlassImageView.frame), RJScreen_Width, (RJScreen_Height - RJScreen_Width + 40) / 2.0);
+    self.alertLabel.frame = CGRectMake(20, 0, RJScreen_Width - 40, CGRectGetHeight(self.topGlassImageView.frame) - 30);
 }
 
 //启动设备
@@ -86,7 +89,21 @@
 }
 
 - (void)scanResultWithArray:(NSArray<RJScanResult*>*)array {
-    NSLog(@"=====%@", array);
+    if (array.count > 0) {
+        RJScanResult *result = [array firstObject];
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:result.strScanned delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alertView show];
+    }
+}
+
+
+#pragma mark - UIAlertViewDelegate
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        [self startScan];
+    }
 }
 
 
@@ -127,6 +144,18 @@
     }
     
     return _bottomGlassImageView;
+}
+
+- (UILabel *)alertLabel {
+    if (!_alertLabel) {
+        _alertLabel = [UILabel new];
+        _alertLabel.textColor = [UIColor blackColor];
+        _alertLabel.numberOfLines = 0;
+        _alertLabel.text = self.alertTitle;
+        _alertLabel.textAlignment = NSTextAlignmentCenter;
+    }
+    
+    return _alertLabel;
 }
 
 @end

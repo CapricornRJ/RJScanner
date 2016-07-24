@@ -10,6 +10,10 @@
 
 @interface RJScanViewController : UIViewController
 
+/**
+ *  提示文字
+ */
+@property (nonatomic, strong) NSString *alertTitle;
 
 @end
 

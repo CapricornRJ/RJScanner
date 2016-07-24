@@ -163,7 +163,7 @@
         _output = [[AVCaptureMetadataOutput alloc]init];
         [_output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
         //设置扫描范围
-        [_output setRectOfInterest:CGRectMake((RJScreen_Height - RJScreen_Width - 40) / 2., 20, RJScreen_Width - 40, RJScreen_Width - 40)];
+        [_output setRectOfInterest:CGRectMake((RJScreen_Height - RJScreen_Width) / 2. /RJScreen_Height, 20 / RJScreen_Width, RJScreen_Width - 40 / RJScreen_Height, RJScreen_Width - 40 / RJScreen_Width)];
     }
     
     return _output;
