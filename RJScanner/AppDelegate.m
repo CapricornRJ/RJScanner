@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RJScanViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +20,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    RJScanViewController *scanViewController = [[RJScanViewController alloc] init];
-    scanViewController.alertTitle = @"在电脑浏览器打开\nwww.baidu.com\n并扫描页面中的二维码";
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:scanViewController];
+    ViewController *viewController = [[ViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
     return YES;
 }

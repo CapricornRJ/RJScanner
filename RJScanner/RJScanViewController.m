@@ -27,6 +27,7 @@
 @property (nonatomic, strong) UILabel     *alertLabel;
 @property (nonatomic, strong) UIImageView *scanLine;
 @property (nonatomic, strong) NSTimer     *scanLineTimer;
+@property (nonatomic, strong) UIButton    *returnButton;
 
 @property (nonatomic) CGFloat scanLineOffset;          /**< 扫描线的偏移量*/
 @property (nonatomic) BOOL    scanLineIsGoingUp;       /**< 扫描线是否向下*/
@@ -37,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor blackColor];
     
     [self setSubviews];
     [self addUIConstraints];
@@ -52,9 +54,7 @@
     [super viewDidAppear:animated];
     
     [self startScan];
-    if (!self.scanLineTimer) {
-        self.scanLineTimer = [NSTimer scheduledTimerWithTimeInterval:0.02f target:self selector:@selector(closeCameraAnimation) userInfo:nil repeats:YES];
-    }
+    [self startTimer];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -67,10 +67,7 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     
-    if (self.scanLineTimer) {
-        [self.scanLineTimer invalidate];
-        self.scanLineTimer = nil;
-    }
+    [self stopTimer];
 }
 
 - (void)setSubviews {
@@ -79,6 +76,7 @@
     [self.view addSubview:self.bottomGlassImageView];
     [self.view addSubview:self.alertLabel];
     [self.view addSubview:self.scanLine];
+    [self.view addSubview:self.returnButton];
 }
 
 - (void)addUIConstraints {
@@ -86,8 +84,8 @@
     self.middleGlassImageView.frame = CGRectMake(0, CGRectGetMaxY(self.topGlassImageView.frame), RJScreen_Width, RJScreen_Width - 100 - 64);
     self.bottomGlassImageView.frame = CGRectMake(0, CGRectGetMaxY(self.middleGlassImageView.frame), RJScreen_Width, (RJScreen_Height - RJScreen_Width + 100 + 64) / 2.0);
     self.alertLabel.frame = CGRectMake(20, 0, RJScreen_Width - 40, CGRectGetHeight(self.topGlassImageView.frame) - 30);
-    
-    self.scanLine.frame = CGRectMake(50, (RJScreen_Height - RJScreen_Width) / 2., RJScreen_Width - 100, 1);
+    self.returnButton.frame = CGRectMake(10, 20, 44, 44);
+    self.scanLine.frame = CGRectMake(50, (RJScreen_Height - RJScreen_Width + 64 + 20) / 2., RJScreen_Width - 100, 1);
 }
 
 //启动设备
@@ -110,6 +108,8 @@
 
 - (void)scanResultWithArray:(NSArray<RJScanResult*>*)array {
     if (array.count > 0) {
+        [self.scanObj stopScan];
+        [self stopTimer];
         RJScanResult *result = [array firstObject];
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:result.strScanned delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alertView show];
@@ -122,13 +122,35 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
+        [self startTimer];
         [self startScan];
     }
 }
 
 
+#pragma mark - event rensponse
+
+
+- (void)returnButtonClick:(UIButton *)button {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 #pragma mark - private methods
 
+
+- (void)startTimer {
+    if (!self.scanLineTimer) {
+        self.scanLineTimer = [NSTimer scheduledTimerWithTimeInterval:0.02f target:self selector:@selector(closeCameraAnimation) userInfo:nil repeats:YES];
+    }
+}
+
+- (void)stopTimer {
+    if (self.scanLineTimer) {
+        [self.scanLineTimer invalidate];
+        self.scanLineTimer = nil;
+    }
+}
 
 - (void)closeCameraAnimation {
     CGFloat top = (RJScreen_Height - RJScreen_Width + 64 + 20) / 2.;
@@ -209,6 +231,16 @@
     }
     
     return _scanLine;
+}
+
+- (UIButton *)returnButton {
+    if (!_returnButton) {
+        _returnButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_returnButton setImage:[UIImage imageNamed:@"RJScanner.bundle/images/return_icon"] forState:UIControlStateNormal];
+        [_returnButton addTarget:self action:@selector(returnButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _returnButton;
 }
 
 @end
