@@ -21,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     RJScanViewController *scanViewController = [[RJScanViewController alloc] init];
-    scanViewController.alertTitle = @"在电脑浏览器打开\n......\n并扫描页面中的二维码";
+    scanViewController.alertTitle = @"在电脑浏览器打开\nwww.baidu.com\n并扫描页面中的二维码";
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:scanViewController];
     
     return YES;
