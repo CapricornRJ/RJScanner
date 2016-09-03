@@ -30,7 +30,7 @@
 
 - (void)pushAction:(UIButton *)button {
     RJScanViewController *scanViewController = [[RJScanViewController alloc] init];
-    scanViewController.alertTitle = @"在电脑浏览器打开\nwww.baidu.com\n并扫描页面中的二维码";
+    scanViewController.alertTitle = @"在电脑浏览器打开\n......\n并扫描页面中的二维码";
     [self.navigationController pushViewController:scanViewController animated:YES];
 }
 
